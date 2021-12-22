@@ -8,11 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <header>
+  <body class="h-screen bg-black">
+    <header class="py-4 px-6 bg-gray-700 flex items-center justify-between">
       <div>
         <div class="logo">
-          <svg viewBox="0 0 192 37" fill="none" class="h-5 sm:h-6">
+          <svg viewBox="0 0 192 37" fill="none" class="h-6 sm:h-8">
             <path
               d="M40.0042 10.8054C38.3888 10.8054 37.0568 12.1091 37.0568 13.7528V19.9879V26.2228H40.0042V19.9879V13.7528H43.5185H47.0328V10.8054H43.5185H40.0042Z"
               fill="#E1E1E6"
@@ -71,7 +71,7 @@
 
       <nav>
         <ul class="flex items-center">
-          <li>
+          <li class="add-users p-4">
             <a href="#">
               <svg
                 stroke="currentColor"
@@ -91,7 +91,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="alert items-center p-3">
             <a href="#">
               <svg
                 stroke="currentColor"
@@ -111,9 +111,12 @@
               </svg>
             </a>
           </li>
-          <li>
-            <strong>Viviane Queiroz</strong>
+          <li class="user flex items-center ml-4">
+            <strong class="text-gray-300 hidden sm:inline"
+              >Viviane Queiroz</strong
+            >
             <img
+              class="border-2 border-green-400 rounded-full ml-4 h-12 w-12"
               src="https://avatars.githubusercontent.com/u/61950209?v=4"
               alt="Viviane Queiroz Profile"
             />
